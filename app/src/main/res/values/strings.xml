@@ -1,3 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Bingshop</string>
+    <string name="action_settings">Cart</string>
+    <string name="title_activity_category">Category</string>
+    <string name="title_activity_sub1_cat">Sub1Cat</string>
+    <string name="title_activity_sub2_cat">Sub2CatActivity</string>
+    <string name="title_activity_item">ItemActivity</string>
+    <string name="title_activity_item_size">ItemSizeActivity</string>
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_dummy">DummyActivity</string>
+    <string name="title_activity_dummy_activity1">DummyActivity1</string>
+    <string name="facebook_app_id">522795704526543</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_registration1">Registration1Activity</string>
+    <string name="title_activity_registration2">Registration2Activity</string>
+    <string name="title_activity_registration3">Registration3Activity</string>
+    <string name="RegisterThankContent">Thank you for choosing Bingshop</string>
+    <string name="otpdetail1">We need to confirm your email address and your phone number. Please enter your One Time Passwords that were sent to your email address and phone number. Note that both OTPs are different</string>
+    <string name="title_activity_first">Bingshop</string>
+
 </resources>

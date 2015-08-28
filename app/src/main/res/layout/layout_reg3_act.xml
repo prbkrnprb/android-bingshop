@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:activity="in.bingshop.Registration3Activity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstNameTxt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:hint="Enter First Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lastNameTxt"
+        android:layout_below="@+id/firstNameTxt"
+        android:layout_alignLeft="@+id/firstNameTxt"
+        android:layout_alignStart="@+id/firstNameTxt"
+        android:hint="Enter Last Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/line1Txt"
+        android:layout_below="@+id/lastNameTxt"
+        android:layout_alignLeft="@+id/lastNameTxt"
+        android:layout_alignStart="@+id/lastNameTxt"
+        android:hint="Enter Address Line 1"
+        android:text="Line1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/line2Txt"
+        android:layout_below="@+id/line1Txt"
+        android:layout_alignLeft="@+id/line1Txt"
+        android:layout_alignStart="@+id/line1Txt"
+        android:hint="Enter Address Line 2"
+        android:text="Line2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/areaTxt"
+        android:layout_below="@+id/line2Txt"
+        android:layout_alignLeft="@+id/line2Txt"
+        android:layout_alignStart="@+id/line2Txt"
+        android:hint="Enter Area"
+        android:text="Area" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/cityTxt"
+        android:layout_below="@+id/areaTxt"
+        android:layout_alignLeft="@+id/areaTxt"
+        android:layout_alignStart="@+id/areaTxt"
+        android:hint="Enter City"
+        android:text="City" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/pincodeTxt"
+        android:layout_below="@+id/countryTxt"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Pincode"
+        android:text="641037" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:id="@+id/register3Button"
+        android:onClick="register3Button"
+        android:layout_below="@+id/pincodeTxt"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/stateTxt"
+        android:layout_below="@+id/cityTxt"
+        android:layout_alignLeft="@+id/cityTxt"
+        android:layout_alignStart="@+id/cityTxt"
+        android:hint="Enter State"
+        android:text="State" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/countryTxt"
+        android:layout_below="@+id/stateTxt"
+        android:layout_alignLeft="@+id/stateTxt"
+        android:layout_alignStart="@+id/stateTxt"
+        android:hint="Enter Country"
+        android:text="Country" />
+</RelativeLayout>

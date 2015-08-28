@@ -15,7 +15,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import in.bingshop.mobileapp.ServerConnInterface;
+import in.bingshop.mobileapp.linker.ServerConnInterface;
 import in.bingshop.util.Constants;
 import in.bingshop.util.Utilities;
 

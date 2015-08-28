@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:activity="in.bingshop.Registration1Activity"
+    android:background="@drawable/gradient"
+    android:id="@+id/reg1act"
+    android:focusable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RegisterThankContent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailTxt"
+        android:hint="Enter E-Mail ID"
+        android:layout_above="@+id/password1Txt"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#47ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password1Txt"
+        android:hint="Enter Password"
+        android:layout_above="@+id/password2Txt"
+        android:layout_alignLeft="@+id/password2Txt"
+        android:layout_alignStart="@+id/password2Txt"
+        android:textColor="#ffffff"
+        android:textColorHint="#47ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password2Txt"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Retype password"
+        android:textColor="#ffffff"
+        android:textColorHint="#47ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/mobileTxt"
+        android:layout_below="@+id/password2Txt"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Mobile Number"
+        android:phoneNumber="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#47ffffff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mobileTxt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout3">
+
+            <com.facebook.widget.LoginButton
+                android:id="@+id/auth1Button"
+                facebook:confirm_logout="false"
+                facebook:fetch_user_info="true"
+                facebook:login_text="Register using Facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/centerPoint"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/centerPoint"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:id="@+id/register1Button"
+                android:onClick="register1Button"
+                android:src="@drawable/rightarrow"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="*"
+        android:id="@+id/emailStarLabel"
+        android:layout_above="@+id/emailTxt"
+        android:layout_toRightOf="@id/emailTxt"
+        android:textColor="#ff0503"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="*"
+        android:id="@+id/password1StarLabel"
+        android:layout_above="@+id/password1Txt"
+        android:layout_toRightOf="@+id/password1Txt"
+        android:textColor="#ff0503" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="*"
+        android:id="@+id/mobileStarLabel"
+        android:layout_above="@+id/mobileTxt"
+        android:layout_toRightOf="@+id/mobileTxt"
+        android:textColor="#ff0503" />
+
+</RelativeLayout>

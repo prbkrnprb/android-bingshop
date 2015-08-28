@@ -3,7 +3,6 @@ package in.bingshop.mobileapp.linker;
 import android.graphics.Bitmap;
 
 import in.bingshop.exception.MyObjNotFoundException;
-import in.bingshop.mobileapp.ServerConnInterface;
 import in.bingshop.util.StaticVariables;
 
 /**

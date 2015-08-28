@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listText"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/constItemName"
+        android:layout_toEndOf="@+id/constItemName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listQuantity"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_below="@+id/listText"
+        android:layout_toRightOf="@+id/constItemQuant"
+        android:layout_toEndOf="@+id/constItemQuant" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/removeItem"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_alignBottom="@+id/listQuantity"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Item : "
+        android:id="@+id/constItemName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quantity : "
+        android:id="@+id/constItemQuant"
+        android:layout_alignTop="@+id/listQuantity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total price : "
+        android:id="@+id/constItemPrice"
+        android:layout_below="@+id/listQuantity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listPrice"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_alignTop="@+id/constItemPrice"
+        android:layout_toRightOf="@+id/constItemPrice"
+        android:layout_toEndOf="@+id/constItemPrice" />
+</RelativeLayout>

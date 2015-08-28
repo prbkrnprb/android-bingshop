@@ -1,7 +1,6 @@
 package in.bingshop.mobileapp.linker;
 
 import in.bingshop.exception.MyObjNotFoundException;
-import in.bingshop.mobileapp.ServerConnInterface;
 import in.bingshop.mobileapp.connection.BaseConnection;
 import in.bingshop.util.StaticVariables;
 

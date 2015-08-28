@@ -1,4 +1,4 @@
-package in.bingshop.mobileapp;
+package in.bingshop.mobileapp.linker;
 
 import android.graphics.Bitmap;
 
